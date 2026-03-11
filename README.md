@@ -1,3 +1,4 @@
+
 # Divide and Conquer Algorithm Visualizer
 
 This project visualizes divide and conquer algorithms.
@@ -21,3 +22,4 @@ Technologies Used:
 HTML
 CSS
 JavaScript
+
