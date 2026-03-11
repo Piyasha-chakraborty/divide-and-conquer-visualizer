@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Divide and Conquer Visualizer</title>
+<title>Divide and Conquer Algorithm Visualizer</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -9,22 +9,45 @@
 
 <h1>Divide and Conquer Algorithm Visualizer</h1>
 
+<div class="controls">
+
+<label>Select Algorithm</label>
+
 <select id="algorithm">
-<option>Merge Sort</option>
-<option>Quick Sort</option>
-<option>Min Max</option>
-<option>Largest Subarray</option>
+<option value="merge">Merge Sort</option>
+<option value="quick">Quick Sort</option>
+<option value="minmax">Min and Max</option>
+<option value="subarray">Largest Subarray Sum</option>
+<option value="matrix">Matrix Multiplication</option>
+<option value="strassen">Strassen Multiplication</option>
+<option value="closest">Closest Pair of Points</option>
+<option value="convex">Convex Hull</option>
 </select>
 
 <input type="text" id="inputArray" placeholder="Enter numbers like 8,3,5,2">
 
-<button onclick="runAlgorithm()">Run</button>
+<button onclick="runAlgorithm()">Run Algorithm</button>
 
-<h2>Steps</h2>
+</div>
+
+<div class="container">
+
+<div class="box">
+<h2>Visualization</h2>
 <div id="steps"></div>
+</div>
 
+<div class="box">
+<h2>Explanation</h2>
+<div id="explanation"></div>
+</div>
+
+<div class="box">
 <h2>Time Complexity</h2>
 <div id="complexity"></div>
+</div>
+
+</div>
 
 <script src="script.js"></script>
 
